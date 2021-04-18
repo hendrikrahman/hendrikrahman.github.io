@@ -1,3 +1,11 @@
+// page load
+window.addEventListener("load", () => {
+  document.querySelector(".page-loader").classList.add("slide-out-right");
+  setTimeout(() => {
+    document.querySelector(".page-loader").style.display = "none";
+  }, 1000);
+});
+
 // bg-animation-effect
 function bgAnimationItems() {
   const rows = 7,
